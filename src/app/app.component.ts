@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog';
+  title = 'Angular Tutorial';
+
+  getName() {
+    alert(
+      'Hello! You\'re on the Angular blog!'
+    )
+  }
+
+  displayVal: string = '';
+  geValue(val: any) {
+    console.warn(val)
+    this.displayVal = val
+  }
+
+
 }
